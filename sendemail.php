@@ -1,5 +1,5 @@
 <?php
-   
+
 
     session_cache_limiter( 'nocache' );
     header( 'Expires: ' . gmdate( 'r', 0 ) );
@@ -8,11 +8,8 @@
 
     $to         = 'adityaadi1467@gmail.com';  // put your email here
 
-    $email_template = 'simple.html';
-
-    $subject    = strip_tags($_POST['subject']);
+    $subject    = 'Contact Message';
     $email       = strip_tags($_POST['email']);
-    $phone      = strip_tags($_POST['phone']);
     $name       = strip_tags($_POST['name']);
     $message    = nl2br( htmlspecialchars($_POST['message'], ENT_QUOTES) );
     $result     = array();
@@ -23,14 +20,14 @@
         $result = array( 'response' => 'error', 'empty'=>'name', 'message'=>'<strong>Error!</strong>&nbsp; Name is empty.' );
         echo json_encode($result );
         die;
-    } 
+    }
 
     if(empty($email)){
 
         $result = array( 'response' => 'error', 'empty'=>'email', 'message'=>'<strong>Error!</strong>&nbsp; Email is empty.' );
         echo json_encode($result );
         die;
-    } 
+    }
 
     if(empty($message)){
 
@@ -38,29 +35,14 @@
          echo json_encode($result );
          die;
     }
-    
 
 
-    $headers  = "From: " . $name . ' <' . $email . '>' . "\r\n";
-    $headers .= "Reply-To: ". $email . "\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+      //  mail($admin_email, "$subject", $comment, "From:" . $email);
 
 
-    $templateTags =  array(
-        '{{subject}}' => $subject,
-        '{{email}}'=>$email,
-        '{{message}}'=>$message,
-        '{{name}}'=>$name,
-        '{{phone}}'=>$phone
-        );
 
-
-    $templateContents = file_get_contents( dirname(__FILE__) . '/email-templates/'.$email_template);
-
-    $contents =  strtr($templateContents, $templateTags);
-
-    if ( mail( $to, $subject, $contents, $headers ) ) {
+    if ( mail( $to, $subject, $message,"From:".$email  ) ) {
         $result = array( 'response' => 'success', 'message'=>'<strong>Thank You!</strong>&nbsp; Your email has been delivered.' );
     } else {
         $result = array( 'response' => 'error', 'message'=>'<strong>Error!</strong>&nbsp; Cann\'t Send Mail.'  );
