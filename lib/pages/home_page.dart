@@ -1,9 +1,7 @@
 import 'package:adityagurjar/tabs/about_tab.dart';
 import 'package:adityagurjar/tabs/blog_tab.dart';
 import 'package:adityagurjar/tabs/projects_tab.dart';
-import 'package:adityagurjar/tabs/social_tab.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -11,20 +9,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static List<Widget> _widgetOptions = <Widget>[
-   // ProjectsTab(),
-    BlogTab(),
+  static List<Widget> tabWidgets = <Widget>[
     AboutTab(),
+    BlogTab(),
     ProjectsTab(),
   ];
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
 
   @override
   void initState() {
@@ -34,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+        child: tabWidgets.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -52,39 +42,9 @@ class _HomePageState extends State<HomePage> {
           )
         ],
         currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
+        onTap: (index)=> setState(() => _selectedIndex = index),
       ),
     );
   }
-//    return Scaffold(
-//        appBar: AppBar(),
-//        body: SingleChildScrollView(
-//          child: Center(
-//            child: Column(
-//              crossAxisAlignment: CrossAxisAlignment.center,
-//              children: <Widget>[
-//                CircleAvatar(
-//                  radius: 100,
-//                  backgroundImage: Image.asset('avatar.jpg').image,
-//                ),
-//                SizedBox(
-//                  height: 20,
-//                ),
-//                Text(
-//                  'Aditya Gurjar',
-//                  textScaleFactor: 4,
-//                ),
-//                Padding(
-//                  padding: const EdgeInsets.all(8.0),
-//                  child: Text(
-//                    'Android Developer @savaaricars Full Stack Android Developer. Flutter. Cricket. Music. Likes traveling.'
-//                  ,style: Theme.of(context).textTheme.caption,
-//                    textScaleFactor: 2,
-//                  ),
-//                )
-//              ],
-//            ),
-//          ),®
-//        ));
-// }
+
 }

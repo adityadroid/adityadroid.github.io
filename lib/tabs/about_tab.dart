@@ -1,5 +1,6 @@
+import 'package:adityagurjar/config/constants.dart';
 import 'package:flutter/material.dart';
-
+import 'dart:html' as html;
 class AboutTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -41,21 +42,21 @@ class AboutTab extends StatelessWidget {
                       height: 20,
                       child: Image.asset('github.png')),
                   label: Text('Github'),
-                  onPressed: (){},
+                  onPressed:()=> html.window.open(Constants.PROFILE_GITHUB,'adityadroid' ),
                 ),FlatButton.icon(
                   icon: SizedBox(
                       width: 20,
                       height: 20,
                       child: Image.asset('twitter.png')),
                   label: Text('Twitter'),
-                  onPressed: (){},
+                  onPressed:()=> html.window.open(Constants.PROFILE_TWITTER,'adityadroid' ),
                 ),FlatButton.icon(
                   icon: SizedBox(
                       width: 20,
                       height: 20,
                       child: Image.asset('medium.png')),
                   label: Text('Medium'),
-                  onPressed: (){},
+                  onPressed:()=> html.window.open(Constants.PROFILE_MEDIUM,'adityadroid' ),
                 )
               ],
             ),
@@ -69,21 +70,21 @@ class AboutTab extends StatelessWidget {
                       height: 20,
                       child: Image.asset('instagram.png')),
                   label: Text('Instagram'),
-                  onPressed: (){},
+                  onPressed:()=> html.window.open(Constants.PROFILE_INSTAGRAM,'adityadroid' ),
                 ),FlatButton.icon(
                   icon: SizedBox(
                       width: 20,
                       height: 20,
                       child: Image.asset('facebook.png')),
                   label: Text('Facebook'),
-                  onPressed: (){},
+                  onPressed:()=> html.window.open(Constants.PROFILE_FACEBOOK,'adityadroid' ),
                 ),FlatButton.icon(
                   icon: SizedBox(
                       width: 20,
                       height: 20,
                       child: Image.asset('linkedin.png')),
                   label: Text('Linkedin'),
-                  onPressed: (){},
+                  onPressed:()=> html.window.open(Constants.PROFILE_LINKEDIN,'adityadroid' ),
                 )
               ],
             )
