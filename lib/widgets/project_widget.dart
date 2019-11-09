@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'dart:html' as html;
 class ProjectWidget extends StatelessWidget {
   final Project _project;
-
-  ProjectWidget(this._project);
+  final double _bottomPadding;
+  ProjectWidget(this._project,this._bottomPadding );
 
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return InkWell(
-      onTap: onProjectClick,
-      child: Card(
-        margin: EdgeInsets.only(top: 16.0, left: 16.0, right: 16.0),
-        child: Padding(
+    return Card(
+        margin: EdgeInsets.fromLTRB(16.0,16.0,16.0,_bottomPadding),
+        child:InkWell(
+          onTap: onProjectClick,
+          child:  Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,

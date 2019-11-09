@@ -28,11 +28,11 @@ class ProjectsTab extends StatelessWidget {
         name: 'Savaari Partner',
         image: 'works/savaari_partner.png',
         description:
-            'The Savaari Partner App allows cab drivers to conveniently share billing and other trip details scheduled to them from savaari .',
+            'This App allows cab drivers to conveniently share billing and other trip details scheduled to them.',
         link:
             'https://play.google.com/store/apps/details?id=com.savaari.driver.app'),
     Project(
-        name: 'Myynewcar',
+        name: 'Mynewcar',
         image: 'works/mynewcar.png',
         description:
             'Through this App, along with doorstep delivery of a new car, one can also select the accessories to buy.',
@@ -41,14 +41,14 @@ class ProjectsTab extends StatelessWidget {
         name: 'Trivz',
         image: 'works/trivz.png',
         description:
-            'With the Trivz app, car owners can share their car experience with car buyers and let them have a feel of their car.',
+            'With the Trivz app, car owners can give test drives to car buyers.',
         link:
             'https://play.google.com/store/apps/details?id=in.mynewcar.testdrives'),
     Project(
         name: 'Mydealer',
         image: 'works/mydealer.png',
         description:
-            'Mydealer App helps a car dealership to have an efficient sales process and improve the productivity of the sales team.',
+            'Mydealer App helps a car dealership to manage sales process and improve the productivity`.',
         link: 'https://play.google.com/store/apps/details?id=in.mnc.mydealer'),
     Project(
         name: 'FaceLyt',
@@ -61,7 +61,7 @@ class ProjectsTab extends StatelessWidget {
         name: 'Cocoapay',
         image: 'works/cocoapay.png',
         description:
-            'Cocoapay helps merchants start accepting payments through POS devices. It also let\'s them bill through the app.',
+            'Cocoapay helps merchants start accepting payments through POS devices and bill through the app.',
         link: 'http://www.cocoapay.com/'),
     Project(
         name: 'VDrone',
@@ -88,25 +88,24 @@ class ProjectsTab extends StatelessWidget {
         name: 'Railenq',
         image: 'works/railenq.png',
         description:
-            'RailENQ presents the old boring experience of searching for trains and Railway Enquiries into a new Refreshing way.'),
+            'RailENQ is an app for trains and Railway Enquiries.'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
-      largeScreen: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: GridView.count(
+      largeScreen: GridView.count(
+          padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
           crossAxisCount: 3,
           childAspectRatio: MediaQuery.of(context).size.width /
               (MediaQuery.of(context).size.height / 1.3),
           children: List.generate(
-              projects.length, (index) => ProjectWidget(projects[index])),
+              projects.length, (index) => ProjectWidget(projects[index], 0)),
         ),
-      ),
       smallScreen: ListView.builder(
           itemCount: projects.length,
-          itemBuilder: (context, index) => ProjectWidget(projects[index])),
+          itemBuilder: (context, index) => ProjectWidget(
+              projects[index], (index == projects.length - 1 ? 16.0 : 0))),
     );
   }
 }

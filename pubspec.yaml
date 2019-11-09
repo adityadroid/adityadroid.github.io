@@ -1,5 +1,5 @@
 name: adityagurjar
-description: A new Flutter project.
+description: My portfolio website.
 version: 1.0.0+1
 
 environment:
@@ -8,14 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^0.1.2
-  webview_flutter: ^0.3.4
   http: ^0.12.0+2
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
 flutter:
   uses-material-design: true
