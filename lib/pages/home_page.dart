@@ -3,7 +3,7 @@ import 'package:adityagurjar/tabs/blog_tab.dart';
 import 'package:adityagurjar/tabs/projects_tab.dart';
 import 'package:adityagurjar/tabs/social_tab.dart';
 import 'package:flutter/material.dart';
-
+import 'package:http/http.dart' as http;
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -14,10 +14,10 @@ class _HomePageState extends State<HomePage> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    ProjectsTab(),
+   // ProjectsTab(),
     BlogTab(),
+    AboutTab(),
     ProjectsTab(),
-    SocialTab()
   ];
 
   void _onItemTapped(int index) {
@@ -26,6 +26,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
