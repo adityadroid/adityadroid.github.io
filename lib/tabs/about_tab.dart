@@ -13,7 +13,7 @@ class AboutTab extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 100,
-                backgroundImage: Image.asset('avatar.jpg').image,
+                backgroundImage: Image.asset('assets/avatar.jpg').image,
               ),
               SizedBox(
                 height: 20,
@@ -42,21 +42,21 @@ class AboutTab extends StatelessWidget {
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('github.png')),
+                        child: Image.asset('assets/github.png')),
                     label: Text('Github'),
                     onPressed:()=> html.window.open(Constants.PROFILE_GITHUB,'adityadroid' ),
                   ),FlatButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('twitter.png')),
+                        child: Image.asset('assets/twitter.png')),
                     label: Text('Twitter'),
                     onPressed:()=> html.window.open(Constants.PROFILE_TWITTER,'adityadroid' ),
                   ),FlatButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('medium.png')),
+                        child: Image.asset('assets/medium.png')),
                     label: Text('Medium'),
                     onPressed:()=> html.window.open(Constants.PROFILE_MEDIUM,'adityadroid' ),
                   )
@@ -70,21 +70,21 @@ class AboutTab extends StatelessWidget {
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('instagram.png')),
+                        child: Image.asset('assets/instagram.png')),
                     label: Text('Instagram'),
                     onPressed:()=> html.window.open(Constants.PROFILE_INSTAGRAM,'adityadroid' ),
                   ),FlatButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('facebook.png')),
+                        child: Image.asset('assets/facebook.png')),
                     label: Text('Facebook'),
                     onPressed:()=> html.window.open(Constants.PROFILE_FACEBOOK,'adityadroid' ),
                   ),FlatButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('linkedin.png')),
+                        child: Image.asset('assets/linkedin.png')),
                     label: Text('Linkedin'),
                     onPressed:()=> html.window.open(Constants.PROFILE_LINKEDIN,'adityadroid' ),
                   )

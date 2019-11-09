@@ -12,5 +12,11 @@ dependencies:
 
 flutter:
   uses-material-design: true
-
+  assets:
+  - assets/
+  - assets/works/
+  fonts:
+  - family: GoogleSansRegular
+    fonts:
+      - asset: assets/GoogleSansRegular.ttf
 

@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           actions: <Widget>[
             IconButton(
-              icon: ThemeSwitcher.of(context).isDarkModeOn?Icon(Icons.wb_sunny):Image.asset('moon.png',height: 20,width: 20,),
+              icon: ThemeSwitcher.of(context).isDarkModeOn?Icon(Icons.wb_sunny):Image.asset('assets/moon.png',height: 20,width: 20,),
               onPressed: ()=> ThemeSwitcher.of(context).switchDarkMode(),
             )
           ],
