@@ -70,6 +70,8 @@ class _BlogTabState extends State<BlogTab> {
   }
 
   Widget blogList() {
+
+
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(bottom: 16.0),
@@ -79,6 +81,7 @@ class _BlogTabState extends State<BlogTab> {
             ListView.builder(
                 itemCount: _blogs.length,
                 shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) =>
                     BlogWidget(_blogs[index], index, _blogs.length)),
             RaisedButton(

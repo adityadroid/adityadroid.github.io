@@ -9,6 +9,14 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+//    MaterialApp(
+//      debugShowCheckedModeBanner: false,
+//      title: 'Aditya Gurjar',
+//      theme:ThemeSwitcher.of(context).isDarkModeOn?darkTheme(context):lightTheme(context),
+//      home: Scaffold(
+//        body: Container(),
+//      ),
+//    );
     return ThemeSwitcherWidget(
       initialDarkModeOn: false,
       child: Adityadroid(),
@@ -26,7 +34,6 @@ class Adityadroid extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Aditya Gurjar',
-    //theme: lightTheme(context),
       theme:ThemeSwitcher.of(context).isDarkModeOn?darkTheme(context):lightTheme(context),
       home: HomePage(),
     );

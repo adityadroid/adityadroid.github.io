@@ -1,3 +1,4 @@
+import 'package:adityagurjar/config/assets.dart';
 import 'package:adityagurjar/tabs/about_tab.dart';
 import 'package:adityagurjar/tabs/blog_tab.dart';
 import 'package:adityagurjar/tabs/projects_tab.dart';
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           actions: <Widget>[
             IconButton(
-              icon: ThemeSwitcher.of(context).isDarkModeOn?Icon(Icons.wb_sunny):Image.asset('assets/moon.png',height: 20,width: 20,),
+              icon: ThemeSwitcher.of(context).isDarkModeOn?Icon(Icons.wb_sunny):Image.asset(Assets.moon,height: 20,width: 20,),
               onPressed: ()=> ThemeSwitcher.of(context).switchDarkMode(),
             )
           ],

@@ -20,7 +20,7 @@ darkTheme(context) {
 }
 lightTheme(context) {
   return ThemeData(
-    fontFamily: 'GoogleSansRegular',
+     fontFamily: 'GoogleSansRegular',
     primarySwatch: Colors.blue,
     primaryColor: Colors.white,
     accentColor: Colors.blue,

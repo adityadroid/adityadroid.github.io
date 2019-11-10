@@ -10,8 +10,7 @@ class BlogWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double topBottomPadding =
-    (index == 0 || index == length - 1) ? 16.0 : 8.0;
+    double topBottomPadding = (index == 0 || index == length - 1) ? 16.0 : 8.0;
     return InkWell(
       onTap: ()=>html.window.open(Constants.BLOG_URL+blog.uniqueSlug, 'adityadroid'),
       child: Card(
