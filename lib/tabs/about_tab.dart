@@ -14,7 +14,7 @@ class AboutTab extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 100,
-                backgroundImage: Image.asset('assets/avatar.jpg').image,
+                backgroundImage: Image.asset(Assets.avatar).image,
               ),
               SizedBox(
                 height: 20,
@@ -98,4 +98,3 @@ class AboutTab extends StatelessWidget {
     );
   }
 }
-//<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>

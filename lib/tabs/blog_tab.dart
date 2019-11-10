@@ -71,7 +71,6 @@ class _BlogTabState extends State<BlogTab> {
 
   Widget blogList() {
 
-
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(bottom: 16.0),
