@@ -4,6 +4,8 @@ A portfolio website built using flutter for web.
 
 Happy learning. :+1:
 
+Checkout [this](https://medium.com/flutter-community/flutter-for-web-building-a-portfolio-website-3e9865710efe) blog for build instructions.
+
 ### Show some :heart: and star the repo to support the project
 
 [![GitHub stars](https://img.shields.io/github/stars/adityadroid/adityadroid.github.io.svg?style=social&label=Star)](https://github.com/adityadroid/adityadroid.github.io) [![GitHub forks](https://img.shields.io/github/forks/adityadroid/adityadroid.github.io.svg?style=social&label=Fork)](https://github.com/adityadroid/adityadroid.github.io/fork) [![GitHub watchers](https://img.shields.io/github/watchers/adityadroid/adityadroid.github.io.svg?style=social&label=Watch)](https://github.com/adityadroid/adityadroid.github.io) [![GitHub followers](https://img.shields.io/github/followers/adityadroid.svg?style=social&label=Follow)](https://github.com/adityadroid/adityadroid.github.io)
