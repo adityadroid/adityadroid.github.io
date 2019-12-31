@@ -6,6 +6,7 @@ class Assets{
   static const instagram = 'assets/instagram.png';
   static const linkedin = 'assets/linkedin.png';
   static const medium = 'assets/medium.png';
+  static const medium_light = 'assets/medium_light.png';
   static const twitter= 'assets/twitter.png';
   static const cocoapay = 'assets/works/cocoapay.png';
   static const facelyt = 'assets/works/facelyt.png';
