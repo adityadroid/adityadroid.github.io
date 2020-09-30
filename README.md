@@ -15,7 +15,7 @@ Checkout [this](https://medium.com/flutter-community/flutter-for-web-building-a-
 
 ### :heart: Found this project useful?
 
-If you found this project useful, then please consider giving it a :star: on Github and sharing it with your friends via social media.
+If you found this project useful, then please consider giving it a :star: on Github and sharing it with your friends via social media and this gives me lots of compliment for do more.
 
 ## Project Created & Maintained By
 
