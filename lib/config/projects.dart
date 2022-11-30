@@ -3,10 +3,17 @@ import 'assets.dart';
 
 final List<Project> projects = [
   Project(
+      name: 'myBrightlink',
+      image: Assets.mybrightlink,
+      description:
+      'This app serves a community of families and caregivers navigating life with autism and behavioral health needs.',
+      link:
+      'https://play.google.com/store/apps/details?id=org.xolv.mybrightlink'),
+  Project(
       name: 'Truelancer',
       image: Assets.truelancer,
       description:
-      'Truelancer Mobile App is a Freelancing Platform. You can Search Jobs & Hire Freelancers for work.',
+      'Truelancer is a Freelancing Platform. You can Search Jobs & Hire Freelancers for work.',
       link:
       'https://play.google.com/store/apps/details?id=com.truelancer.app'),
   Project(

@@ -4,7 +4,9 @@ darkTheme(context) {
     fontFamily: 'GoogleSansRegular',
     primarySwatch: Colors.blue,
     primaryColor: Colors.black,
-    accentColor: Colors.blue,
+    colorScheme: ColorScheme.dark().copyWith(
+        secondary: Colors.blue
+    ),
     disabledColor: Colors.grey,
     cardColor: Color(0xff1f2124),
     canvasColor: Colors.black,
@@ -15,6 +17,7 @@ darkTheme(context) {
         splashColor: Colors.black),
     appBarTheme: AppBarTheme(
       elevation: 0.0,
+        backgroundColor: Colors.black
     ),
   );
 }
@@ -23,7 +26,9 @@ lightTheme(context) {
      fontFamily: 'GoogleSansRegular',
     primarySwatch: Colors.blue,
     primaryColor: Colors.white,
-    accentColor: Colors.blue,
+    colorScheme:  ColorScheme.light().copyWith(
+      secondary: Colors.blue
+    ),
     disabledColor: Colors.grey,
     cardColor: Colors.white,
     canvasColor: Colors.white,
@@ -34,6 +39,7 @@ lightTheme(context) {
         splashColor: Colors.white),
     appBarTheme: AppBarTheme(
       elevation: 0.0,
+      backgroundColor: Colors.white
     ),
   );
 }

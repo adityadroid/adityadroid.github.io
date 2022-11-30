@@ -37,11 +37,11 @@ class _BlogTabState extends State<BlogTab> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text('Something went wrong',style: Theme.of(context).textTheme.headline,),
+              child: Text('Something went wrong',style: Theme.of(context).textTheme.headline5,),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Retry',style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),),
-              elevation: 0.0,
+             style: ElevatedButton.styleFrom(elevation: 0),
               onPressed:loadBlogs,
             )
           ],
@@ -83,9 +83,9 @@ class _BlogTabState extends State<BlogTab> {
                 physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) =>
                     BlogWidget(_blogs[index], index, _blogs.length)),
-            RaisedButton(
+            ElevatedButton(
               child: Text('More',style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),),
-              elevation: 0.0,
+              style: ElevatedButton.styleFrom(elevation: 0),
               onPressed: () =>
                   html.window.open(Constants.PROFILE_MEDIUM, 'adityadroid'),
             )

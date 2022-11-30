@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  static List<Widget> tabWidgets = <Widget>[
+  List<Widget> tabWidgets = <Widget>[
     AboutTab(),
     BlogTab(),
     ProjectsTab(),
@@ -39,20 +39,20 @@ class _HomePageState extends State<HomePage> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.account_circle),
-              title: Text('About'),
+              label: 'About',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.chrome_reader_mode),
-              title: Text('Blog'),
+              label: 'Blog',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.mobile_screen_share),
-              title: Text('Projects'),
+              icon: Icon(Icons.work),
+              label: 'Projects',
             )
           ],
           currentIndex: _selectedIndex,
           onTap: (index)=> setState(() => _selectedIndex = index),
-          selectedItemColor: Theme.of(context).accentColor,
+          selectedItemColor: Theme.of(context).colorScheme.secondary,
         ),
     );
   }

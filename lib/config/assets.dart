@@ -1,6 +1,6 @@
 class Assets{
   static const moon = 'assets/moon.png';
-  static const avatar = 'assets/avatar.jpg';
+  static const avatar = 'assets/avatar.png';
   static const facebook = 'assets/facebook.png';
   static const github = 'assets/github.png';
   static const instagram = 'assets/instagram.png';
@@ -19,6 +19,7 @@ class Assets{
   static const savaari_consumer = 'assets/works/savaari_consumer.png';
   static const savaari_partner = 'assets/works/savaari_partner.png';
   static const trivz = 'assets/works/trivz.png';
+  static const mybrightlink ='assets/works/mybrightlink.png';
   static const truelancer ='assets/works/truelancer.png';
   static const vdrone = 'assets/works/vdrone.png';
   static const wheelie_repairs = 'assets/works/wheelie_repairs.png';

@@ -30,13 +30,13 @@ class BlogWidget extends StatelessWidget {
               ),
               Text(
                 blog.title,
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.headline6,
               ),
               SizedBox(
                 height: 8,
               ),
               Text(blog.content.subtitle,
-                  style: Theme.of(context).textTheme.subtitle),
+                  style: Theme.of(context).textTheme.subtitle2),
               //Text(blog.virtuals.totalClapCount)
             ],
           ),
