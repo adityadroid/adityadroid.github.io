@@ -83,9 +83,8 @@ class _BlogTabState extends State<BlogTab> {
                 physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) =>
                     BlogWidget(_blogs[index], index, _blogs.length)),
-            ElevatedButton(
-              child: Text('More',style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),),
-              style: ElevatedButton.styleFrom(elevation: 0),
+            TextButton(
+              child: Text('More'),
               onPressed: () =>
                   html.window.open(Constants.PROFILE_MEDIUM, 'adityadroid'),
             )

@@ -1,10 +1,11 @@
 import 'package:adityagurjar/config/constants.dart';
+import 'package:adityagurjar/models/blog_model.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 class BlogWidget extends StatelessWidget {
-  final blog;
-  final index;
-  final length;
+  final Blog blog;
+  final int index;
+  final int length;
   const BlogWidget(this.blog,this.index,this.length);
 
 
@@ -23,7 +24,7 @@ class BlogWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Image.network(
-                Constants.MEDIUM_IMAGE_CDN + blog.virtuals.previewImage.imageId,
+                Constants.MEDIUM_IMAGE_CDN + blog.imageId,
               ),
               SizedBox(
                 height: 16,
@@ -35,7 +36,7 @@ class BlogWidget extends StatelessWidget {
               SizedBox(
                 height: 8,
               ),
-              Text(blog.content.subtitle,
+              Text(blog.subtitle,
                   style: Theme.of(context).textTheme.subtitle2),
               //Text(blog.virtuals.totalClapCount)
             ],
