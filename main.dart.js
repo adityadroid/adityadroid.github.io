@@ -35367,7 +35367,7 @@ A.Ot.prototype={
 o1(){var s=0,r=A.a1(t.X7),q,p
 var $async$o1=A.a2(function(a,b){if(a===1)return A.Z(b,r)
 while(true)switch(s){case 0:s=3
-return A.a3(A.asR(A.aqz("https","adityadroid-medium.herokuapp.com","/@adityadroid",null)),$async$o1)
+return A.a3(A.asR(A.aqz("https","cute-rose-zebra-suit.cyclic.app","/@adityadroid",null)),$async$o1)
 case 3:p=b
 if(p.b===200){q=J.zZ(J.aQ(B.at.cm(0,B.M.cm(0,p.w)),"response"),new A.Ou(),t.rT).dB(0)
 s=1
